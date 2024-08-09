@@ -51,7 +51,7 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <165>;
+            tapping-term-ms = <160>;
             flavor = "balanced";
         };
     };
@@ -72,7 +72,7 @@
         Syms {
             label = "Syms";
             bindings = <
-&trans  &as_slow_k EXCL NUMBER_1  &as_slow_k AT NUMBER_2  &as_slow_k HASH NUMBER_3  &as_slow_k DLLR NUMBER_4  &as_slow_k PRCNT NUMBER_5    &as_slow_k CARET NUMBER_6  &as_slow_k AMPS NUMBER_7  &as_slow_k KP_MULTIPLY NUMBER_8  &as_slow_k LPAR NUMBER_9  &as_slow_k RPAR NUMBER_0  &kp DEL
+&trans  &as_slow_k EXCL NUMBER_1  &as_slow_k AT NUMBER_2  &as_slow_k HASH NUMBER_3  &as_slow_k DLLR NUMBER_4  &as_slow_k PRCNT NUMBER_5    &as_slow_k CARET NUMBER_6  &as_slow_k AMPS NUMBER_7  &as_slow_k KP_MULTIPLY NUMBER_8  &as_slow_k LPAR NUMBER_9  &as_slow_k RPAR NUMBER_0  &kp BACKSPACE
 &trans  &trans                    &trans                  &trans                    &trans                    &trans                       &kp UNDER                  &kp EQUAL                 &kp LBKT                         &kp RBKT                  &kp BSLH                  &kp GRAVE
 &trans  &trans                    &trans                  &trans                    &trans                    &trans                       &kp MINUS                  &kp PLUS                  &kp LBRC                         &kp RBRC                  &kp PIPE                  &kp TILDE
                                                           &kp LGUI                  &kp SPACE                 &trans                       &trans                     &trans
@@ -82,8 +82,8 @@
         Navs {
             label = "Navs";
             bindings = <
-&trans        &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans  &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP  &kp END    &kp PRINTSCREEN
-&trans        &bt BT_NXT    &bt BT_PRV    &bt BT_CLR    &out OUT_TOG  &to 3           &trans  &kp LEFT  &kp DOWN       &kp UP       &kp RIGHT  &trans
+&trans        &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans  &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP  &kp END    &kp DEL
+&trans        &bt BT_NXT    &bt BT_PRV    &bt BT_CLR    &out OUT_TOG  &to 3           &trans  &kp LEFT  &kp DOWN       &kp UP       &kp RIGHT  &kp PRINTSCREEN
 &kp LEFT_ALT  &trans        &trans        &trans        &trans        &trans          &trans  &trans    &trans         &trans       &trans     &trans
                                           &kp LGUI      &kp SPACE     &trans          &trans  &trans
             >;
