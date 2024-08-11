@@ -76,7 +76,7 @@
         Base {
             label = "Base";
             bindings = <
-&kp TAB    &kp Q         &kp W         &kp E          &kp R               &kp T    &kp Y      &kp U                &kp I                       &kp O                           &kp P                      &to 3
+&kp TAB    &kp Q         &kp W         &kp E          &kp R               &kp T    &kp Y      &kp U                &kp I                       &kp O                           &kp P                      &mo 3
 &kp LCTRL  &hm_l LGUI A  &hm_l LALT S  &hm_l LCTRL D  &hm_l LEFT_SHIFT F  &kp G    &kp H      &hm_r RIGHT_SHIFT J  &hm_r RCTRL K               &hm_r RALT L                    &hm_r RGUI SEMICOLON       &as_fast_k DOUBLE_QUOTES SINGLE_QUOTE
 &kp LSHFT  &kp Z         &kp X         &kp C          &kp V               &kp B    &kp N      &kp M                &as_fast_k LESS_THAN COMMA  &as_fast_k GREATER_THAN PERIOD  &as_fast_k QUESTION SLASH  &kp RSHIFT
                                        &kp ESC        &tap_mod_k 2 SPACE  &mo 1    &kp ENTER  &kp BACKSPACE
