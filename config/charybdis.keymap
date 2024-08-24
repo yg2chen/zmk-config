@@ -104,10 +104,10 @@
 
         fun {
             bindings = <
-&trans  &trans    &trans    &trans     &trans      &trans    &kp PRINTSCREEN  &kp F7      &kp F8  &kp F9  &kp F10  &trans
-&trans  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHIFT  &trans    &kp SCROLLLOCK   &kp F4      &kp F5  &kp F6  &kp F11  &trans
-&trans  &trans    &trans    &trans     &trans      &trans    &kp PAUSE_BREAK  &kp F1      &kp F2  &kp F3  &kp F12  &trans
-                            &trans     &trans      &trans    &trans           &kp C_MENU
+&bootloader  &trans    &trans    &trans     &trans      &trans    &kp PRINTSCREEN  &kp F7      &kp F8  &kp F9  &kp F10  &bootloader
+&trans       &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHIFT  &trans    &kp SCROLLLOCK   &kp F4      &kp F5  &kp F6  &kp F11  &trans
+&trans       &trans    &trans    &trans     &trans      &trans    &kp PAUSE_BREAK  &kp F1      &kp F2  &kp F3  &kp F12  &trans
+                                 &trans     &trans      &trans    &trans           &kp C_MENU
             >;
         };
 
