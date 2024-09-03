@@ -61,15 +61,103 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        combo_lbrc {
+            bindings = <&kp LEFT_BRACE>;
+            key-positions = <8 7>;
+            timeout-ms = <50>;
+            layers = <0>;
+        };
+
+        combo_rbrc {
+            bindings = <&kp RIGHT_BRACE>;
+            key-positions = <8 9>;
+            timeout-ms = <50>;
+            layers = <0>;
+        };
+
+        combo_lpar {
+            bindings = <&kp LEFT_PARENTHESIS>;
+            key-positions = <19 20>;
+            timeout-ms = <50>;
+            layers = <0>;
+        };
+
+        combo_rpar {
+            bindings = <&kp RIGHT_PARENTHESIS>;
+            key-positions = <20 21>;
+            timeout-ms = <50>;
+            layers = <0>;
+        };
+
+        combo_lbkt {
+            bindings = <&kp LEFT_BRACKET>;
+            key-positions = <7 19>;
+            timeout-ms = <50>;
+            layers = <0>;
+        };
+
+        combo_rbkt {
+            bindings = <&kp RIGHT_BRACKET>;
+            key-positions = <9 21>;
+            timeout-ms = <50>;
+            layers = <0>;
+        };
+
+        combo_lt {
+            bindings = <&kp LESS_THAN>;
+            key-positions = <31 32>;
+            timeout-ms = <50>;
+            layers = <0>;
+        };
+
+        combo_gt {
+            bindings = <&kp GREATER_THAN>;
+            key-positions = <32 33>;
+            timeout-ms = <50>;
+            layers = <0>;
+        };
+
+        combo_qs {
+            bindings = <&kp QUESTION>;
+            key-positions = <34 33>;
+            timeout-ms = <50>;
+            layers = <0>;
+        };
+
+        combo_eq {
+            bindings = <&kp EQUAL>;
+            key-positions = <18 19>;
+            timeout-ms = <50>;
+            layers = <0>;
+        };
+
+        combo_pos {
+            bindings = <&kp PLUS>;
+            key-positions = <6 7>;
+            timeout-ms = <50>;
+            layers = <0>;
+        };
+
+        combo_neg {
+            bindings = <&kp MINUS>;
+            key-positions = <30 31>;
+            timeout-ms = <50>;
+            layers = <0>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
         Base {
             label = "Base";
             bindings = <
-&kp ESCAPE  &kp Q         &kp W         &kp E          &kp R               &kp T               &kp Y               &kp U                   &kp I                  &kp O                      &kp P                 &kp DELETE
-&kp LCTRL   &hm_l LGUI A  &hm_l LALT S  &hm_l LCTRL D  &hm_l LEFT_SHIFT F  &kp G               &kp H               &hm_r RIGHT_SHIFT J     &hm_r RCTRL K          &hm_r RALT L               &hm_r RGUI SEMICOLON  &as_k DOUBLE_QUOTES SINGLE_QUOTE
-&kp LSHFT   &kp Z         &kp X         &kp C          &kp V               &kp B               &kp N               &kp M                   &as_k LESS_THAN COMMA  &as_k GREATER_THAN PERIOD  &as_k QUESTION SLASH  &kp RSHIFT
+&kp ESCAPE  &kp Q         &kp W         &kp E          &kp R               &kp T               &kp Y               &kp U                   &kp I          &kp O         &kp P                 &kp DELETE
+&kp LCTRL   &hm_l LGUI A  &hm_l LALT S  &hm_l LCTRL D  &hm_l LEFT_SHIFT F  &kp G               &kp H               &hm_r RIGHT_SHIFT J     &hm_r RCTRL K  &hm_r RALT L  &hm_r RGUI SEMICOLON  &as_k DOUBLE_QUOTES SINGLE_QUOTE
+&kp LSHFT   &kp Z         &kp X         &kp C          &kp V               &kp B               &kp N               &kp M                   &kp COMMA      &kp PERIOD    &kp SLASH             &kp RSHIFT
                                         &mo 3          &tap_mod_k 1 SPACE  &tap_mod_k 2 TAB    &tap_mod_k 4 ENTER  &tap_mod_k 5 BACKSPACE
             >;
         };
