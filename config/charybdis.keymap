@@ -129,21 +129,49 @@
 
         combo_eq {
             bindings = <&kp EQUAL>;
-            key-positions = <18 19>;
+            key-positions = <20 32>;
             timeout-ms = <50>;
             layers = <0>;
         };
 
         combo_pos {
             bindings = <&kp PLUS>;
-            key-positions = <6 7>;
+            key-positions = <19 31>;
             timeout-ms = <50>;
             layers = <0>;
         };
 
         combo_neg {
             bindings = <&kp MINUS>;
-            key-positions = <30 31>;
+            key-positions = <21 33>;
+            timeout-ms = <50>;
+            layers = <0>;
+        };
+
+        combo_bslh {
+            bindings = <&kp NON_US_BACKSLASH>;
+            key-positions = <6 18>;
+            timeout-ms = <50>;
+            layers = <0>;
+        };
+
+        combo_pipe {
+            bindings = <&kp PIPE>;
+            key-positions = <18 30>;
+            timeout-ms = <50>;
+            layers = <0>;
+        };
+
+        combo_grve {
+            bindings = <&kp GRAVE>;
+            key-positions = <10 22>;
+            timeout-ms = <50>;
+            layers = <0>;
+        };
+
+        combo_tilde {
+            bindings = <&kp TILDE>;
+            key-positions = <22 34>;
             timeout-ms = <50>;
             layers = <0>;
         };
