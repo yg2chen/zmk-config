@@ -183,10 +183,10 @@
         Base {
             label = "Base";
             bindings = <
-&kp ESCAPE  &kp Q         &kp W         &kp D          &kp F               &kp K               &kp J               &kp U                   &kp R          &kp L         &kp SEMI           &kp DELETE
-&kp LCTRL   &hm_l LGUI A  &hm_l LALT S  &hm_l LCTRL E  &hm_l LSHIFT T      &kp G               &kp Y               &hm_r RSHIFT N          &hm_r RCTRL I  &hm_r RALT O  &hm_r RIGHT_GUI H  &kp APOS
-&kp LSHFT   &kp Z         &kp X         &kp C          &kp V               &kp B               &kp P               &kp M                   &kp COMMA      &kp PERIOD    &kp SLASH          &kp RSHIFT
-                                        &mo 3          &tap_mod_k 1 SPACE  &tap_mod_k 2 TAB    &tap_mod_k 4 ENTER  &tap_mod_k 5 BACKSPACE
+&kp ESCAPE  &kp Q         &kp W             &kp F          &kp P               &kp B               &kp J               &kp L                   &kp U          &kp Y         &kp SEMI      &kp DELETE
+&kp LCTRL   &hm_l LGUI A  &hm_l LEFT_ALT R  &hm_l LCTRL S  &hm_l LSHIFT T      &kp G               &kp M               &hm_r RSHIFT N          &hm_r RCTRL E  &hm_r RALT I  &hm_r RGUI O  &kp APOS
+&kp LSHFT   &kp Z         &kp X             &kp C          &kp D               &kp V               &kp K               &kp H                   &kp COMMA      &kp PERIOD    &kp SLASH     &kp RSHIFT
+                                            &mo 3          &tap_mod_k 1 SPACE  &tap_mod_k 2 TAB    &tap_mod_k 4 ENTER  &tap_mod_k 5 BACKSPACE
             >;
         };
 
