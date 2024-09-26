@@ -180,18 +180,21 @@
             bindings = <&mkp LCLK>;
             key-positions = <15 16>;
             layers = <0>;
+            timeout-ms = <50>;
         };
 
         combo_mmclk {
             bindings = <&mkp MCLK>;
             key-positions = <15 14>;
             layers = <0>;
+            timeout-ms = <50>;
         };
 
         combo_mrclk {
             bindings = <&mkp RCLK>;
             key-positions = <14 13>;
             layers = <0>;
+            timeout-ms = <50>;
         };
     };
 
