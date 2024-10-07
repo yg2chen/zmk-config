@@ -106,50 +106,29 @@
             layers = <0>;
         };
 
-        combo_lt {
-            bindings = <&kp LESS_THAN>;
-            key-positions = <31 32>;
-            timeout-ms = <50>;
-            layers = <0>;
-        };
-
-        combo_gt {
-            bindings = <&kp GREATER_THAN>;
-            key-positions = <32 33>;
-            timeout-ms = <50>;
-            layers = <0>;
-        };
-
-        combo_qs {
-            bindings = <&kp QUESTION>;
-            key-positions = <34 33>;
-            timeout-ms = <50>;
-            layers = <0>;
-        };
-
         combo_eq {
             bindings = <&kp EQUAL>;
-            key-positions = <20 32>;
+            key-positions = <20 8>;
             timeout-ms = <50>;
             layers = <0>;
         };
 
         combo_pos {
             bindings = <&kp PLUS>;
-            key-positions = <19 31>;
+            key-positions = <31 32>;
             timeout-ms = <50>;
             layers = <0>;
         };
 
         combo_neg {
             bindings = <&kp MINUS>;
-            key-positions = <21 33>;
+            key-positions = <33 32>;
             timeout-ms = <50>;
             layers = <0>;
         };
 
         combo_bslh {
-            bindings = <&kp NON_US_BACKSLASH>;
+            bindings = <&kp BACKSLASH>;
             key-positions = <6 18>;
             timeout-ms = <50>;
             layers = <0>;
@@ -185,14 +164,14 @@
 
         combo_mmclk {
             bindings = <&mkp MCLK>;
-            key-positions = <15 14>;
+            key-positions = <27 28>;
             layers = <0>;
             timeout-ms = <50>;
         };
 
         combo_mrclk {
             bindings = <&mkp RCLK>;
-            key-positions = <14 13>;
+            key-positions = <14 15>;
             layers = <0>;
             timeout-ms = <50>;
         };
