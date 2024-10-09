@@ -64,20 +64,6 @@
     combos {
         compatible = "zmk,combos";
 
-        combo_lbrc {
-            bindings = <&kp LEFT_BRACE>;
-            key-positions = <8 7>;
-            timeout-ms = <50>;
-            layers = <0 6>;
-        };
-
-        combo_rbrc {
-            bindings = <&kp RIGHT_BRACE>;
-            key-positions = <8 9>;
-            timeout-ms = <50>;
-            layers = <0>;
-        };
-
         combo_lpar {
             bindings = <&kp LEFT_PARENTHESIS>;
             key-positions = <19 20>;
@@ -94,14 +80,14 @@
 
         combo_lbkt {
             bindings = <&kp LEFT_BRACKET>;
-            key-positions = <7 19>;
+            key-positions = <31 32>;
             timeout-ms = <50>;
             layers = <0>;
         };
 
         combo_rbkt {
             bindings = <&kp RIGHT_BRACKET>;
-            key-positions = <9 21>;
+            key-positions = <33 32>;
             timeout-ms = <50>;
             layers = <0>;
         };
@@ -115,42 +101,42 @@
 
         combo_pos {
             bindings = <&kp PLUS>;
-            key-positions = <31 32>;
+            key-positions = <7 8>;
             timeout-ms = <50>;
             layers = <0>;
         };
 
         combo_neg {
             bindings = <&kp MINUS>;
-            key-positions = <33 32>;
+            key-positions = <9 8>;
             timeout-ms = <50>;
             layers = <0>;
         };
 
         combo_bslh {
             bindings = <&kp BACKSLASH>;
-            key-positions = <6 18>;
+            key-positions = <7 19>;
             timeout-ms = <50>;
             layers = <0>;
         };
 
         combo_pipe {
             bindings = <&kp PIPE>;
-            key-positions = <18 30>;
+            key-positions = <19 31>;
             timeout-ms = <50>;
             layers = <0>;
         };
 
         combo_grve {
             bindings = <&kp GRAVE>;
-            key-positions = <10 22>;
+            key-positions = <9 21>;
             timeout-ms = <50>;
             layers = <0>;
         };
 
         combo_tilde {
             bindings = <&kp TILDE>;
-            key-positions = <22 34>;
+            key-positions = <21 33>;
             timeout-ms = <50>;
             layers = <0>;
         };
@@ -179,20 +165,6 @@
         combo_underscore {
             bindings = <&kp UNDERSCORE>;
             key-positions = <33 34>;
-            timeout-ms = <50>;
-            layers = <0>;
-        };
-
-        combo_quote {
-            bindings = <&kp SINGLE_QUOTE>;
-            key-positions = <21 22>;
-            timeout-ms = <50>;
-            layers = <0>;
-        };
-
-        combo_dquote {
-            bindings = <&kp DOUBLE_QUOTES>;
-            key-positions = <9 10>;
             timeout-ms = <50>;
             layers = <0>;
         };
