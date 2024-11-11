@@ -100,14 +100,14 @@
 
         combo_pos {
             bindings = <&kp PLUS>;
-            key-positions = <19 31>;
+            key-positions = <31 32>;
             timeout-ms = <50>;
             layers = <0>;
         };
 
         combo_neg {
             bindings = <&kp MINUS>;
-            key-positions = <21 33>;
+            key-positions = <33 32>;
             timeout-ms = <50>;
             layers = <0>;
         };
@@ -132,6 +132,13 @@
             timeout-ms = <50>;
             layers = <0>;
         };
+
+        combo_apos {
+            bindings = <&kp APOSTROPHE>;
+            key-positions = <34 22>;
+            timeout-ms = <50>;
+            layers = <0>;
+        };
     };
 
     keymap {
@@ -140,19 +147,19 @@
         Base {
             label = "Base";
             bindings = <
-&kp ESCAPE  &kp Q             &kp W             &kp E                 &kp R               &kp T               &kp Y               &kp U                   &kp I                  &kp O              &kp P                      &kp DELETE
-&kp LCTRL   &hm_l LEFT_WIN A  &hm_l LEFT_ALT S  &hm_l LEFT_CONTROL D  &hm_l LEFT_SHIFT F  &kp G               &kp H               &hm_r RIGHT_SHIFT J     &hm_r RIGHT_CONTROL K  &hm_r RIGHT_ALT L  &hm_r RIGHT_GUI SEMICOLON  &kp APOS
-&kp LSHFT   &kp Z             &kp X             &kp C                 &kp V               &kp B               &kp N               &kp M                   &kp COMMA              &kp PERIOD         &kp SLASH                  &kp RSHIFT
-                                                &tap_mod_k 4 ESC      &tap_mod_k 5 SPACE  &tap_mod_k 2 TAB    &tap_mod_k 3 ENTER  &tap_mod_k 1 BACKSPACE
+&none  &kp Q             &kp W             &kp E                 &kp R               &kp T               &kp Y               &kp U                   &kp I                  &kp O              &kp P                      &none
+&none  &hm_l LEFT_WIN A  &hm_l LEFT_ALT S  &hm_l LEFT_CONTROL D  &hm_l LEFT_SHIFT F  &kp G               &kp H               &hm_r RIGHT_SHIFT J     &hm_r RIGHT_CONTROL K  &hm_r RIGHT_ALT L  &hm_r RIGHT_GUI SEMICOLON  &none
+&none  &tap_mod_k 6 Z    &kp X             &kp C                 &kp V               &kp B               &kp N               &kp M                   &kp COMMA              &kp PERIOD         &kp SLASH                  &none
+                                           &tap_mod_k 4 ESC      &tap_mod_k 5 SPACE  &tap_mod_k 2 TAB    &tap_mod_k 3 ENTER  &tap_mod_k 1 BACKSPACE
             >;
         };
 
-        NUM {
+        Num {
             bindings = <
 &trans  &kp MINUS  &kp N7  &kp N8   &kp N9  &kp BSLH          &trans  &trans      &trans     &trans    &trans    &trans
 &trans  &kp LBKT   &kp N4  &kp N5   &kp N6  &kp RBKT          &trans  &kp RSHIFT  &kp RCTRL  &kp RALT  &kp RGUI  &trans
 &trans  &kp PLUS   &kp N1  &kp N2   &kp N3  &kp GRAVE         &trans  &trans      &trans     &trans    &trans    &trans
-                           &kp DOT  &kp N0  &kp UNDERSCORE    &trans  &trans
+                           &kp DOT  &kp N0  &kp UNDERSCORE    &trans  &kp DEL
             >;
 
             label = "num";
@@ -168,7 +175,7 @@
             >;
         };
 
-        FUN {
+        Fun {
             bindings = <
 &bootloader  &kp F7  &kp F8  &kp F9  &kp F10     &kp PRINTSCREEN    &trans  &trans     &trans     &trans    &trans    &bootloader
 &trans       &kp F4  &kp F5  &kp F6  &kp F11     &kp SCROLLLOCK     &trans  &kp LSHFT  &kp LCTRL  &kp LALT  &kp LGUI  &trans
@@ -179,7 +186,7 @@
             label = "fun";
         };
 
-        MEDIA {
+        Media {
             bindings = <
 &trans  &trans    &trans    &trans     &trans      &trans    &bt BT_SEL 0  &bt BT_SEL 1     &bt BT_SEL 2       &bt BT_SEL 3        &bt BT_SEL 4      &trans
 &trans  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHIFT  &trans    &bt BT_CLR    &kp C_VOLUME_UP  &kp C_VOLUME_DOWN  &kp C_MUTE          &kp C_PLAY_PAUSE  &trans
@@ -190,13 +197,26 @@
             label = "media";
         };
 
-        mouse {
+        Scroll {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans     &trans  &trans     &trans     &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &mkp LCLK  &trans  &mkp RCLK  &mkp MCLK  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans     &trans  &trans     &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
                         &trans  &trans  &trans    &trans  &trans
             >;
+
+            label = "scroll";
+        };
+
+        Mouse {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans     &trans     &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &mkp LCLK  &mkp MCLK  &mkp RCLK  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans     &trans     &trans     &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans
+            >;
+
+            label = "mouse";
         };
     };
 };
