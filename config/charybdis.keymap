@@ -79,49 +79,21 @@
 
         combo_lbkt {
             bindings = <&kp LEFT_BRACKET>;
-            key-positions = <7 8>;
+            key-positions = <31 32>;
             timeout-ms = <50>;
             layers = <0>;
         };
 
         combo_rbkt {
             bindings = <&kp RIGHT_BRACKET>;
-            key-positions = <8 9>;
+            key-positions = <32 33>;
             timeout-ms = <50>;
             layers = <0>;
         };
 
         combo_eq {
             bindings = <&kp EQUAL>;
-            key-positions = <20 32>;
-            timeout-ms = <50>;
-            layers = <0>;
-        };
-
-        combo_pos {
-            bindings = <&kp PLUS>;
-            key-positions = <31 32>;
-            timeout-ms = <50>;
-            layers = <0>;
-        };
-
-        combo_neg {
-            bindings = <&kp MINUS>;
-            key-positions = <33 32>;
-            timeout-ms = <50>;
-            layers = <0>;
-        };
-
-        combo_bslh {
-            bindings = <&kp BACKSLASH>;
-            key-positions = <6 18>;
-            timeout-ms = <50>;
-            layers = <0>;
-        };
-
-        combo_grve {
-            bindings = <&kp GRAVE>;
-            key-positions = <10 22>;
+            key-positions = <21 22>;
             timeout-ms = <50>;
             layers = <0>;
         };
