@@ -45,9 +45,9 @@
             require-prior-idle-ms = <125>;
         };
 
-        tap_mod_k: tap_mod_k {
+        layer_tap_l: layer_tap_l {
             compatible = "zmk,behavior-hold-tap";
-            label = "TAP_MOD_K";
+            label = "LAYER_TAP_L";
             bindings = <&mo>, <&kp>;
 
             #binding-cells = <2>;
@@ -56,7 +56,21 @@
             require-prior-idle-ms = <125>;
             flavor = "balanced";
             hold-trigger-on-release;
-            hold-trigger-key-positions = <1 2 4 5 6 7 9 10 13 14 15 16 17 18 19 20 21 22 25 26 27 28 29 30 31 32 33 34 8 3>;
+            hold-trigger-key-positions = <1 2 4 5 6 7 9 10 13 14 15 16 17 18 19 20 21 22 26 27 28 29 30 31 32 33 34 8 3 39 40>;
+        };
+
+        layer_tap_r: layer_tap_r {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LAYER_TAP_R";
+            bindings = <&mo>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <125>;
+            flavor = "balanced";
+            hold-trigger-on-release;
+            hold-trigger-key-positions = <1 2 4 5 6 7 9 10 13 14 15 16 17 18 19 20 21 22 25 26 27 28 29 30 31 32 33 34 8 3 36 37 38>;
         };
     };
 
@@ -119,10 +133,10 @@
         Base {
             label = "Base";
             bindings = <
-&none  &kp Q             &kp W             &kp E                 &kp R               &kp T               &kp Y               &kp U                   &kp I                  &kp O              &kp P                      &none
-&none  &hm_l LEFT_WIN A  &hm_l LEFT_ALT S  &hm_l LEFT_CONTROL D  &hm_l LEFT_SHIFT F  &kp G               &kp H               &hm_r RIGHT_SHIFT J     &hm_r RIGHT_CONTROL K  &hm_r RIGHT_ALT L  &hm_r RIGHT_GUI SEMICOLON  &none
-&none  &tap_mod_k 6 Z    &kp X             &kp C                 &kp V               &kp B               &kp N               &kp M                   &kp COMMA              &kp PERIOD         &kp SLASH                  &none
-                                           &tap_mod_k 4 ESC      &tap_mod_k 5 SPACE  &tap_mod_k 2 TAB    &tap_mod_k 3 ENTER  &tap_mod_k 1 BACKSPACE
+&none  &kp Q             &kp W             &kp E                 &kp R                 &kp T                 &kp Y                 &kp U                     &kp I                  &kp O              &kp P                      &none
+&none  &hm_l LEFT_WIN A  &hm_l LEFT_ALT S  &hm_l LEFT_CONTROL D  &hm_l LEFT_SHIFT F    &kp G                 &kp H                 &hm_r RIGHT_SHIFT J       &hm_r RIGHT_CONTROL K  &hm_r RIGHT_ALT L  &hm_r RIGHT_GUI SEMICOLON  &none
+&none  &layer_tap_l 6 Z  &kp X             &kp C                 &kp V                 &kp B                 &kp N                 &kp M                     &kp COMMA              &kp PERIOD         &kp SLASH                  &none
+                                           &layer_tap_l 4 ESC    &layer_tap_l 5 SPACE  &layer_tap_l 2 TAB    &layer_tap_r 3 ENTER  &layer_tap_r 1 BACKSPACE
             >;
         };
 
