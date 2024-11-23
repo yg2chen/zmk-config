@@ -107,7 +107,7 @@
 
         combo_eq {
             bindings = <&kp EQUAL>;
-            key-positions = <21 22>;
+            key-positions = <9 8>;
             timeout-ms = <50>;
             layers = <0>;
         };
@@ -121,7 +121,7 @@
 
         combo_apos {
             bindings = <&kp APOSTROPHE>;
-            key-positions = <34 22>;
+            key-positions = <22 21>;
             timeout-ms = <50>;
             layers = <0>;
         };
