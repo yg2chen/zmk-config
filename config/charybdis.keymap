@@ -99,13 +99,31 @@
             #binding-cells = <0>;
             mods = <(MOD_RSFT|MOD_LSFT)>;
         };
+
+        morph_lpar_lt: morph_lpar_lt {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MORPH_LPAR_LT";
+            bindings = <&kp LEFT_PARENTHESIS>, <&kp LESS_THAN>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        morph_rpar_gt: morph_rpar_gt {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MORPH_RPAR_GT";
+            bindings = <&kp RIGHT_PARENTHESIS>, <&kp GREATER_THAN>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 
     combos {
         compatible = "zmk,combos";
 
         combo_lpar {
-            bindings = <&kp LEFT_PARENTHESIS>;
+            bindings = <&morph_lpar_lt>;
             key-positions = <19 20>;
             timeout-ms = <50>;
             layers = <0>;
@@ -113,7 +131,7 @@
         };
 
         combo_rpar {
-            bindings = <&kp RIGHT_PARENTHESIS>;
+            bindings = <&morph_rpar_gt>;
             key-positions = <20 21>;
             timeout-ms = <50>;
             layers = <0>;
