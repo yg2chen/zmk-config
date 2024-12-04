@@ -117,6 +117,29 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+
+        smart_shft: smart_shft {
+            compatible = "zmk,behavior-mod-morph";
+            label = "SMART_SHFT";
+            bindings = <&sk LSHFT>, <&caps_word>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        smart_shft_mo_l: smart_shft_mo_l {
+            compatible = "zmk,behavior-hold-tap";
+            label = "SMART_SHFT_MO_L";
+            bindings = <&mo>, <&smart_shft>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <125>;
+            flavor = "balanced";
+            hold-trigger-on-release;
+            hold-trigger-key-positions = <1 2 4 5 6 7 9 10 13 14 15 16 17 18 19 20 21 22 26 27 28 29 30 31 32 33 34 8 3 39 40>;
+        };
     };
 
     combos {
@@ -313,10 +336,10 @@
         Base {
             label = "Base";
             bindings = <
-&none  &kp Q             &kp W             &kp E                 &kp R                 &kp T                 &kp Y                 &kp U                     &kp I                  &kp O                &kp P                       &none
-&none  &hm_l LEFT_WIN A  &hm_l LEFT_ALT S  &hm_l LEFT_CONTROL D  &hm_l LEFT_SHIFT F    &kp G                 &kp H                 &hm_r RIGHT_SHIFT J       &hm_r RIGHT_CONTROL K  &hm_r RIGHT_ALT L    &hm_r RIGHT_GUI APOSTROPHE  &none
-&none  &layer_tap_l 6 Z  &kp X             &kp C                 &kp V                 &kp B                 &kp N                 &kp M                     &morph_comma_semi      &morph_period_colon  &morph_question_excl        &none
-                                           &layer_tap_l 4 ESC    &layer_tap_l 5 SPACE  &layer_tap_l 2 TAB    &layer_tap_r 3 ENTER  &layer_tap_r 1 BACKSPACE
+&none       &kp Q             &kp W             &kp E                 &kp R                 &kp T                 &kp Y                 &kp U                     &kp I                  &kp O              &kp P                       &none
+&kp ESCAPE  &hm_l LEFT_WIN A  &hm_l LEFT_ALT S  &hm_l LEFT_CONTROL D  &hm_l LEFT_SHIFT F    &kp G                 &kp H                 &hm_r RIGHT_SHIFT J       &hm_r RIGHT_CONTROL K  &hm_r RIGHT_ALT L  &hm_r RIGHT_GUI APOSTROPHE  &kp APOSTROPHE
+&none       &layer_tap_l 6 Z  &kp X             &kp C                 &kp V                 &kp B                 &kp N                 &kp M                     &kp COMMA              &kp PERIOD         &morph_question_excl        &none
+                                                &smart_shft_mo_l 4 0  &layer_tap_l 5 SPACE  &layer_tap_l 2 TAB    &layer_tap_r 3 ENTER  &layer_tap_r 1 BACKSPACE
             >;
         };
 
