@@ -366,8 +366,8 @@
             label = "Base";
             bindings = <
 &none       &kp Q             &kp W             &kp E                 &kp R                 &kp T                 &kp Y                 &kp U                     &kp I                  &kp O              &kp P                          &none
-&kp ESCAPE  &hm_l LEFT_WIN A  &hm_l LEFT_ALT S  &hm_l LEFT_CONTROL D  &hm_l LEFT_SHIFT F    &kp G                 &kp H                 &hm_r RIGHT_SHIFT J       &hm_r RIGHT_CONTROL K  &hm_r RIGHT_ALT L  &hm_r RIGHT_GUI APOSTROPHE     &none
-&none       &layer_tap_l 6 Z  &kp X             &kp C                 &kp V                 &kp B                 &kp N                 &kp M                     &morph_cslt            &morph_dcgt        &for_morph_layer_switch_r 6 0  &none
+&kp ESCAPE  &hm_l LEFT_WIN A  &hm_l LEFT_ALT S  &hm_l LEFT_CONTROL D  &hm_l LEFT_SHIFT F    &kp G                 &kp H                 &hm_r RIGHT_SHIFT J       &hm_r RIGHT_CONTROL K  &hm_r RIGHT_ALT L  &hm_r RIGHT_GUI SEMICOLON      &kp APOSTROPHE
+&none       &layer_tap_l 6 Z  &kp X             &kp C                 &kp V                 &kp B                 &kp N                 &kp M                     &kp COMMA              &kp PERIOD         &for_morph_layer_switch_r 6 0  &none
                                                 &smart_shft_mo_l 4 0  &layer_tap_l 5 SPACE  &layer_tap_l 2 TAB    &layer_tap_r 3 ENTER  &layer_tap_r 1 BACKSPACE
             >;
         };
