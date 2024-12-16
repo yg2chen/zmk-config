@@ -300,7 +300,7 @@
             label = "mouse";
         };
 
-        more_syms {
+        evenmore_syms {
             bindings = <
 &trans  &trans  &kp AMPERSAND    &trans       &trans     &trans    &trans    &trans     &trans     &trans        &trans     &trans
 &none   &trans  &kp DOLLAR       &kp PERCENT  &kp CARET  &trans    &kp BSLH  &kp PLUS   &kp EQUAL  &kp ASTERISK  &kp GRAVE  &trans
