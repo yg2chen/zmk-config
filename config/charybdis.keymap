@@ -3,6 +3,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/pointing.h>
 
 / {
     behaviors {
@@ -227,10 +228,10 @@
         Base {
             label = "Base";
             bindings = <
-&none           &kp Q             &kp W             &kp E                  &kp R                 &kp T                 &kp Y                 &kp U                     &kp I                  &kp O              &kp P                      &none
-&more_syms 7 7  &hm_l LEFT_WIN A  &hm_l LEFT_ALT S  &hm_l LEFT_CONTROL D   &hm_l LEFT_SHIFT F    &kp G                 &kp H                 &hm_r RIGHT_SHIFT J       &hm_r RIGHT_CONTROL K  &hm_r RIGHT_ALT L  &hm_r RIGHT_GUI SEMICOLON  &kp APOSTROPHE
-&smart_shft     &layer_tap_l 6 Z  &kp X             &kp C                  &kp V                 &kp B                 &kp N                 &kp M                     &kp COMMA              &kp PERIOD         &layer_tap_r 6 SLASH       &none
-                                                    &layer_tap_l 4 ESCAPE  &layer_tap_l 5 SPACE  &layer_tap_l 2 TAB    &layer_tap_r 3 ENTER  &layer_tap_r 1 BACKSPACE
+&none           &kp Q             &kp W             &kp E                  &kp R                 &kp T                 &kp Y                 &kp U                &kp I                  &kp O              &kp P                      &mo 3
+&more_syms 7 7  &hm_l LEFT_WIN A  &hm_l LEFT_ALT S  &hm_l LEFT_CONTROL D   &hm_l LEFT_SHIFT F    &kp G                 &kp H                 &hm_r RIGHT_SHIFT J  &hm_r RIGHT_CONTROL K  &hm_r RIGHT_ALT L  &hm_r RIGHT_GUI SEMICOLON  &kp APOSTROPHE
+&smart_shft     &layer_tap_l 6 Z  &kp X             &kp C                  &kp V                 &kp B                 &kp N                 &kp M                &kp COMMA              &kp PERIOD         &layer_tap_r 6 SLASH       &smart_shft
+                                                    &layer_tap_l 4 ESCAPE  &layer_tap_l 5 SPACE  &layer_tap_l 2 TAB    &layer_tap_r 1 ENTER  &kp BACKSPACE
             >;
         };
 
