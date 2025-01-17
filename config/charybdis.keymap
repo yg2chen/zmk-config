@@ -3,6 +3,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/pointing.h>
 
 &sk {
     quick-release;
@@ -127,6 +128,24 @@
             label = "HOLD_RELEASE_RCLK";
             #binding-cells = <0>;
             bindings = <&hold_rclk>, <&release_rclk>;
+        };
+
+        morph_comma_apos: morph_comma_apos {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MORPH_COMMA_APOS";
+            bindings = <&kp COMMA>, <&kp SINGLE_QUOTE>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        morph_period_quote: morph_period_quote {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MORPH_PERIOD_QUOTE";
+            bindings = <&kp PERIOD>, <&kp DOUBLE_QUOTES>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
         };
     };
 
@@ -294,9 +313,9 @@
         Base {
             label = "Base";
             bindings = <
-&trans       &kp Q             &kp W             &kp E                 &kp R                 &kp T                    &kp Y                 &kp U                &kp I                  &kp O              &kp P                      &mo 3
-&smart_shft  &hm_l LEFT_WIN A  &hm_l LEFT_ALT S  &hm_l LEFT_CONTROL D  &hm_l LEFT_SHIFT F    &kp G                    &kp H                 &hm_r RIGHT_SHIFT J  &hm_r RIGHT_CONTROL K  &hm_r RIGHT_ALT L  &hm_r RIGHT_GUI SEMICOLON  &kp APOSTROPHE
-&trans       &layer_tap_l 5 Z  &kp X             &kp C                 &kp V                 &kp B                    &kp N                 &kp M                &kp COMMA              &kp PERIOD         &layer_tap_r 5 SLASH       &smart_shft
+&trans       &kp Q             &kp W             &kp E                 &kp R                 &kp T                    &kp Y                 &kp U                &kp I                  &kp O                &kp P                      &mo 3
+&smart_shft  &hm_l LEFT_WIN A  &hm_l LEFT_ALT S  &hm_l LEFT_CONTROL D  &hm_l LEFT_SHIFT F    &kp G                    &kp H                 &hm_r RIGHT_SHIFT J  &hm_r RIGHT_CONTROL K  &hm_r RIGHT_ALT L    &hm_r RIGHT_GUI SEMICOLON  &smart_shft
+&trans       &layer_tap_l 5 Z  &kp X             &kp C                 &kp V                 &kp B                    &kp N                 &kp M                &morph_comma_apos      &morph_period_quote  &layer_tap_r 5 SLASH       &trans
                                                  &kp TAB               &layer_tap_l 1 SPACE  &layer_tap_l 2 ESCAPE    &layer_tap_r 4 ENTER  &kp BACKSPACE
             >;
         };
