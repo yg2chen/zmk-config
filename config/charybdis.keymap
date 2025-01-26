@@ -319,7 +319,7 @@
 &trans  &kp Q             &kp W             &kp E                  &kp R                 &kp T          &kp Y                 &kp U                &kp I                  &kp O                &kp P                      &mo 3
 &trans  &hm_l LEFT_WIN A  &hm_l LEFT_ALT S  &hm_l LEFT_CONTROL D   &hm_l LEFT_SHIFT F    &kp G          &kp H                 &hm_r RIGHT_SHIFT J  &hm_r RIGHT_CONTROL K  &hm_r RIGHT_ALT L    &hm_r RIGHT_GUI SEMICOLON  &trans
 &trans  &layer_tap_l 5 Z  &kp X             &kp C                  &kp V                 &kp B          &kp N                 &kp M                &morph_comma_apos      &morph_period_quote  &layer_tap_r 5 SLASH       &trans
-                                            &layer_tap_l 1 ESCAPE  &layer_tap_l 2 SPACE  &smart_shft    &layer_tap_r 4 ENTER  &kp BACKSPACE
+                                            &smart_shft            &layer_tap_l 1 SPACE  &layer_tap_l 2 ESCAPE    &layer_tap_r 4 ENTER  &kp BACKSPACE
             >;
         };
 
