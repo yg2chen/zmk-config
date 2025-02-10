@@ -6,6 +6,8 @@ manifest:
       url-base: https://github.com/inorichi
     - name: urob
       url-base: https://github.com/urob
+    - name: yg2chen
+      url-base: https://github.com/yg2chen
   projects:
     - name: zmk
       remote: zmkfirmware_pj
@@ -15,7 +17,7 @@ manifest:
       remote: inorichi
       revision: main
     - name: zmk-auto-layer
-      remote: urob
-      revision: v0.1
+      remote: yg2chen
+      revision: main
   self:
     path: config
