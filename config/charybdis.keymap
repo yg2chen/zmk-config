@@ -390,9 +390,9 @@
 
         Mouse {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans         &trans              &trans              &trans              &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &release_test  &mkp LCLK           &mkp MCLK           &mkp RCLK           &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans         &hold_release_lclk  &hold_release_mclk  &hold_release_rclk  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans         &trans              &trans              &trans          &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans         &mkp LCLK           &mkp MCLK           &mkp RCLK       &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans         &trans              &trans  			 &trans          &trans  &trans
                         &trans  &trans  &trans    &trans         &trans
             >;
 
